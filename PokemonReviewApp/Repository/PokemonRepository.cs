@@ -48,12 +48,12 @@ namespace PokemonReviewApp.Repository
 
         public Pokemon GetPokemon(int id)
         {
-            return _context.Pokemon.Where(p => p.Id == id).FirstOrDefault();
+            return _context.Pokemon.Where(p => p.Id == id).FirstOrDefault(); //FirstOrDefault(); means return one object's Details
         }
 
         public Pokemon GetPokemon(string name)
         {
-            return _context.Pokemon.Where(p => p.Name == name).FirstOrDefault();
+            return _context.Pokemon.Where(p => p.Name == name).FirstOrDefault();//FirstOrDefault(); means return one object's Details
         }
 
         public decimal GetPokemonRating(int pokeId)
